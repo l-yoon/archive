@@ -1,0 +1,170 @@
+{
+  "spine": [
+    "Text/cover.xhtml",
+    "Text/title.xhtml",
+    "Text/author_intro.xhtml",
+    "Text/index.xhtml",
+    "Text/intro.xhtml",
+    "Text/intro2.xhtml",
+    "Text/p01.xhtml",
+    "Text/Section0001.xhtml",
+    "Text/p02.xhtml",
+    "Text/Section0002.xhtml",
+    "Text/Section0002_2.xhtml",
+    "Text/Section0002_3.xhtml",
+    "Text/qna_01.xhtml",
+    "Text/p03.xhtml",
+    "Text/Section0003.xhtml",
+    "Text/Section0003_2.xhtml",
+    "Text/Section0003_3.xhtml",
+    "Text/Section0003_32.xhtml",
+    "Text/Section0003_33.xhtml",
+    "Text/Section0003_34.xhtml",
+    "Text/Section0003_35.xhtml",
+    "Text/Section0004.xhtml",
+    "Text/qna_02.xhtml",
+    "Text/p04.xhtml",
+    "Text/Section0005.xhtml",
+    "Text/Section0005_2.xhtml",
+    "Text/Section0005_3.xhtml",
+    "Text/Section0006.xhtml",
+    "Text/Section0006_2.xhtml",
+    "Text/qna_03.xhtml",
+    "Text/p05.xhtml",
+    "Text/Section0007.xhtml",
+    "Text/Section0007_2.xhtml",
+    "Text/Section0007_3.xhtml",
+    "Text/Section0008.xhtml",
+    "Text/Section0008_2.xhtml",
+    "Text/qna_04.xhtml",
+    "Text/p06.xhtml",
+    "Text/Section0009.xhtml",
+    "Text/p251.xhtml",
+    "Text/qna_05.xhtml",
+    "Text/p07.xhtml",
+    "Text/Section0010.xhtml",
+    "Text/qna_06.xhtml",
+    "Text/p08.xhtml",
+    "Text/Section0011.xhtml",
+    "Text/outro.xhtml",
+    "Text/copyright.xhtml"
+  ],
+  "toc": [
+    {
+      "title": "Intro. 모든 직장인이 이직을 준비해야 하는 이유",
+      "src": "Text/intro.xhtml"
+    },
+    {
+      "title": "STEP 1. 이직 준비 수준 체크하기",
+      "src": "Text/p01.xhtml"
+    },
+    {
+      "title": "이직 준비 체크리스트",
+      "src": "Text/Section0001.xhtml"
+    },
+    {
+      "title": "STEP 2. 성공적인 이직을 위한 이직 플랜 만들기",
+      "src": "Text/p02.xhtml"
+    },
+    {
+      "title": "이직의 유형 3가지",
+      "src": "Text/Section0002.xhtml"
+    },
+    {
+      "title": "이직할 기업을 찾는 기준",
+      "src": "Text/Section0002_2.xhtml"
+    },
+    {
+      "title": "기업 유형별 체크 포인트",
+      "src": "Text/Section0002_3.xhtml"
+    },
+    {
+      "title": "고민 QnA : 안정적인 회사에서 이직하는 것이 과연 성공적인 이직일까?",
+      "src": "Text/qna_01.xhtml"
+    },
+    {
+      "title": "STEP 3. 후회 없는 퇴사 타이밍 진단 가이드",
+      "src": "Text/p03.xhtml"
+    },
+    {
+      "title": "공통 체크리스트",
+      "src": "Text/Section0003.xhtml"
+    },
+    {
+      "title": "연차별 체크리스트",
+      "src": "Text/Section0004.xhtml"
+    },
+    {
+      "title": "고민 QnA : 상사의 변덕과 가스라이팅 때문에 너무 힘들어요",
+      "src": "Text/qna_02.xhtml"
+    },
+    {
+      "title": "STEP 4. 면접관이 뽑고 싶은 경력기술서 작성 방법",
+      "src": "Text/p04.xhtml"
+    },
+    {
+      "title": "경력 기술서와 물경력 진단",
+      "src": "Text/Section0005.xhtml"
+    },
+    {
+      "title": "경력 기술서 템플릿 사용 가이드",
+      "src": "Text/Section0006.xhtml"
+    },
+    {
+      "title": "고민 QnA : 회사에서 열심히만 하면 안되는 이유",
+      "src": "Text/qna_03.xhtml"
+    },
+    {
+      "title": "STEP 5. 퇴직 사유 준비 가이드",
+      "src": "Text/p05.xhtml"
+    },
+    {
+      "title": "면접관이 의심하지 않는 퇴직 사유",
+      "src": "Text/Section0007.xhtml"
+    },
+    {
+      "title": "퇴직 사유 정리 프로세스",
+      "src": "Text/Section0008.xhtml"
+    },
+    {
+      "title": "고민 QnA : 과도한 업무량과 야근으로 퇴사가 고민될 때",
+      "src": "Text/qna_04.xhtml"
+    },
+    {
+      "title": "STEP 6. 경력 면접의 특징",
+      "src": "Text/p06.xhtml"
+    },
+    {
+      "title": "신입 면접과 다른 경력 면접 포인트",
+      "src": "Text/Section0009.xhtml"
+    },
+    {
+      "title": "고민 QnA : 물경력과 공백기로 경력이 꼬이는 과정",
+      "src": "Text/qna_05.xhtml"
+    },
+    {
+      "title": "STEP 7. 레퍼런스 체크 노하우",
+      "src": "Text/p07.xhtml"
+    },
+    {
+      "title": "레퍼런스 체크(평판조회) 준비 가이드",
+      "src": "Text/Section0010.xhtml"
+    },
+    {
+      "title": "고민 QnA : 무조건 회사를 믿으면 안 되는 이유",
+      "src": "Text/qna_06.xhtml"
+    },
+    {
+      "title": "STEP 8. 완벽하게 마무리하는 퇴사 가이드",
+      "src": "Text/p08.xhtml"
+    },
+    {
+      "title": "퇴직 면담의 순서와 주의사항",
+      "src": "Text/Section0011.xhtml"
+    },
+    {
+      "title": "Outro. 이직은 수단이지 목적이 아니다",
+      "src": "Text/outro.xhtml"
+    }
+  ]
+}
