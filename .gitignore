@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+.npm
+
+# Quartz build & cache
+public/
+.quartz-cache/
+.quartz/
+tsconfig.tsbuildinfo
+prof/
+
+# OS and Editors
+.DS_Store
+.obsidian
+*.local
+.env
+.env.*.local
+
+# Private
+private/
