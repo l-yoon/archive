@@ -147,3 +147,12 @@ html[saved-theme="light"] {
     }
   }
 }
+
+// Explorer sidebar styling polish
+.explorer {
+  .folder-title,
+  .nav-file-title {
+    word-break: keep-all; // Prevent breaking Korean words mid-syllable
+    line-height: 1.35;
+  }
+}

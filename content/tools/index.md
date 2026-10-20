@@ -1,5 +1,5 @@
 ---
-title: AI & Dev Tools 큐레이션 & 워크플로우
+title: Tools
 tags:
   - tools
   - ai-tools

@@ -19,7 +19,7 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     expect(response?.status()).toBe(200);
 
     // Verify title and callout
-    await expect(page.locator("h1.article-title")).toContainText("AI & Machine Learning");
+    await expect(page.locator("h1.article-title")).toContainText("AI & Agents");
     await expect(page.locator(".callout")).toBeVisible();
     await expect(page.locator(".callout")).toContainText("실무와 연구를 통해 직접 검증한 핵심 AI 기술 지식");
   });
@@ -28,7 +28,7 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     const response = await page.goto("tools/");
     expect(response?.status()).toBe(200);
 
-    await expect(page.locator("h1.article-title")).toContainText("AI & Dev Tools");
+    await expect(page.locator("h1.article-title")).toContainText("Tools");
     const content = page.locator("article");
     await expect(content).toContainText("Claude Code");
     await expect(content).toContainText("Cursor");
@@ -40,9 +40,9 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     const response = await page.goto("references/");
     expect(response?.status()).toBe(200);
 
-    await expect(page.locator("h1.article-title")).toContainText("Website & Architecture References");
+    await expect(page.locator("h1.article-title")).toContainText("References");
     const article = page.locator("article");
-    await expect(article).toContainText("SaaS UI/UX 패턴");
+    await expect(article).toContainText("B2B SaaS UX");
   });
 
   test("5. Dark mode toggle switches themes", async ({ page }) => {

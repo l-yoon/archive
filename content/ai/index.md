@@ -1,5 +1,5 @@
 ---
-title: AI & Machine Learning 아카이브
+title: AI & Agents
 tags:
   - ai
   - llm

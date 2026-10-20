@@ -1,5 +1,5 @@
 ---
-title: Website & Architecture References
+title: References
 tags:
   - references
   - web
