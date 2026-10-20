@@ -140,6 +140,7 @@
 
 ## 자격증 · 교육 · 수상
 
+- **AI Fluency: Framework and foundations** | Claude Academy (2026.10, [Credential Verification](https://academy.claude.com/verify/c9752163de0adcb5d6a8bfb2eacd5208))
 - **Fundamentals of Agents** | Hugging Face (2025.05)
 - **Google Analytics Certification (GAC)** | Google (2025.02)
 - **AI 웹 개발 프로젝트 최우수상** | 스파르타코딩클럽 (2024.10)

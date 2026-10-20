@@ -29,6 +29,15 @@ tags:
 | **기획 & 프로젝트 관리** | PRD, 화면설계서, 유저플로우, 권한 매트릭스, WBS, QA 결함 트래커, Notion, Jira, Figma |
 | **기술 검증 역량** | 소스 구조 및 API/로그 분석 (NestJS, Vue 3, React, Flutter, Spring Boot / MySQL, MSSQL / AWS, GCP) |
 | **AI & 엔지니어링 도구** | Claude Code, Docker, MCP (Model Context Protocol), Playwright, Git, Google Analytics |
+| **공인 인증 (Badges)** | **AI Fluency: Framework and foundations** (Claude Academy, 2026.10), Fundamentals of Agents (Hugging Face) |
+
+---
+
+## 🎖️ 공인 자격 및 수료
+* **AI Fluency: Framework and foundations** — Claude Academy (2026.10.01 취득, [인증서 확인](https://academy.claude.com/verify/c9752163de0adcb5d6a8bfb2eacd5208))
+* **Fundamentals of Agents** — Hugging Face (2025.05)
+* **Google Analytics Certification (GAC)** — Google (2025.02)
+* **AI 웹 개발 프로젝트 최우수상** — 스파르타코딩클럽 (2024.10)
 
 ---
 

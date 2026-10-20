@@ -69,3 +69,4 @@ graph TD
 - [01. 윤찬민 마스터 경력기술서 (국문)](resume/01_chanmin_yoon_career_description.md) - 글로벌 테크 PM 포지셔닝 및 4대 가이드(기간·성과·전략·기술) 완벽 적용
 - [02. 실전 면접 스크립트 & 스토리라인](resume/02_chanmin_yoon_interview_narrative.md) - 국/영문 1분 자기소개, 3단계 퇴직사유, STAR-L 핵심 질문 대응
 - [03. 타깃 기업군 및 포지셔닝 추천 전략](resume/03_chanmin_yoon_target_companies_recommendation.md) - 글로벌 B2B SaaS, 프롭테크/모빌리티, 에듀테크 등 최적 매칭 분석
+- [04. 윤찬민 PM 실무 케이스 스터디 포트폴리오](resume/04_chanmin_yoon_pm_portfolio.md) - 3대 대표 프로젝트(어학교육 전수 검증, AI 에이전트 언러닝, 대형빌딩 라이브 무장애 운영) 및 Claude Academy 공식 인증 상세 쇼케이스
