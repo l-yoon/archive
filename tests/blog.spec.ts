@@ -121,4 +121,24 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     await expect(viewCounter).toHaveAttribute("alt", "조회수");
     await expect(viewCounter).toHaveAttribute("src", /hits\.sh\/l-yoon\.github\.io\/notes\/ai/);
   });
+
+  test("9. Newly added tool pages load properly with valid headings and content", async ({ page }) => {
+    const pages = [
+      { path: "tools/google-ai-edge-foresight", title: /Google AI Edge Foresight/ },
+      { path: "tools/rea", title: /REA/ },
+      { path: "tools/openbot", title: /OpenBot/ },
+      { path: "tools/anarlog", title: /Anarlog/ },
+      { path: "tools/aside", title: /Aside/ },
+      { path: "tools/claude-code-and-plugins", title: /Claude Code/ },
+    ];
+
+    for (const item of pages) {
+      const response = await page.goto(item.path);
+      expect(response?.status()).toBe(200);
+      await expect(page.locator("h1.article-title")).toHaveText(item.title);
+      await expect(page.locator("article")).toBeVisible();
+      // Ensure no raw mermaid errors or syntax crash
+      await expect(page.locator(".mermaid[data-processed='false']")).toHaveCount(0);
+    }
+  });
 });
