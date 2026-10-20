@@ -29,6 +29,11 @@ graph LR
 
 ---
 
+## 📌 최근 등록된 아티클 (Featured Notes)
+* 🛠️ **[[ai-tools/claude-code-and-plugins|Claude Code와 Plugin 생태계 완벽 가이드]]**: 에이전틱 코딩 CLI의 원리와 Skills, MCP, Subagents, Hooks를 묶는 플러그인 아키텍처
+
+---
+
 ## ✍️ 새 글 작성 시작하기
 - 글 작성 표준 서식: [[template|새 글 작성 템플릿]]
 - `content/` 폴더 내 원하는 카테고리에 마크다운(`.md`) 파일을 생성하면 사이트와 검색창에 자동으로 반영됩니다.

@@ -42,5 +42,10 @@ graph TD
 
 ---
 
+## 📌 주요 아티클 & 실무 가이드
+* 📖 **[[ai-tools/claude-code-and-plugins|Claude Code와 Plugin 생태계 완벽 가이드]]**: 에이전틱 코딩 CLI의 원리와 Skills, MCP, Subagents, Hooks를 묶는 플러그인 아키텍처
+
+---
+
 ## 📝 새 도구 리뷰 작성법
 이 폴더(`content/ai-tools/`)에 도구 사용기 또는 비교 분석 마크다운 파일을 생성하면 탐색기 목록에 자동 추가됩니다.
