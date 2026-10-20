@@ -15,13 +15,13 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
   });
 
   test("2. Navigates to AI & Agent Engineering note and verifies content", async ({ page }) => {
-    const response = await page.goto("ai/agent-pipeline-and-cost-optimization");
+    const response = await page.goto("ai/");
     expect(response?.status()).toBe(200);
 
     // Verify title and callout
-    await expect(page.locator("h1.article-title")).toContainText("AI 에이전트 파이프라인");
+    await expect(page.locator("h1.article-title")).toContainText("AI & Machine Learning");
     await expect(page.locator(".callout")).toBeVisible();
-    await expect(page.locator(".callout")).toContainText("조용한 것은 싸다는 증거가 아니다");
+    await expect(page.locator(".callout")).toContainText("직접 공부하고 실험하며 검증한 기술 지식");
   });
 
   test("3. Navigates to AI Tools hub and verifies tool matrix", async ({ page }) => {
@@ -36,14 +36,13 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     await expect(content).toContainText("Langfuse");
   });
 
-  test("4. Navigates to Portfolio/Resume and verifies credentials", async ({ page }) => {
-    const response = await page.goto("portfolio/resume");
+  test("4. Navigates to Portfolio and verifies structure", async ({ page }) => {
+    const response = await page.goto("portfolio/");
     expect(response?.status()).toBe(200);
 
-    await expect(page.locator("h1.article-title")).toContainText("윤찬민");
+    await expect(page.locator("h1.article-title")).toContainText("Portfolio & Projects");
     const article = page.locator("article");
-    await expect(article).toContainText("AI Fluency: Framework and foundations");
-    await expect(article).toContainText("Claude Academy");
+    await expect(article).toContainText("프로젝트 & 쇼케이스");
   });
 
   test("5. Dark mode toggle switches themes", async ({ page }) => {
@@ -116,10 +115,10 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
   });
 
   test("8. Page view counter badge is rendered in content-meta", async ({ page }) => {
-    await page.goto("ai/mcp-server-protocol");
+    await page.goto("ai/");
     const viewCounter = page.locator(".content-meta .view-counter img.view-counter-img");
     await expect(viewCounter).toBeVisible({ timeout: 10000 });
     await expect(viewCounter).toHaveAttribute("alt", "조회수");
-    await expect(viewCounter).toHaveAttribute("src", /hits\.sh\/l-yoon\.github\.io\/notes\/ai\/mcp-server-protocol/);
+    await expect(viewCounter).toHaveAttribute("src", /hits\.sh\/l-yoon\.github\.io\/notes\/ai/);
   });
 });
