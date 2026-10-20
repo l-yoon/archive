@@ -1,34 +1,39 @@
 ---
-title: AI & Machine Learning 학습 노트
+title: AI & Machine Learning 아카이브
 tags:
   - ai
   - llm
   - agents
 ---
 
-> [!NOTE] 섹션 소개
-> LLM, 에이전트 시스템, 프롬프트 엔지니어링, RAG 등 **직접 공부하고 실험하며 검증한 기술 지식**을 기록하는 공간입니다.
+> [!NOTE] 섹션 개요
+> 대규모 언어 모델(LLM), 에이전트 시스템, 프롬프트 엔지니어링, RAG 등 **실무와 연구를 통해 직접 검증한 핵심 AI 기술 지식과 구현 패턴**을 다룹니다.
 
 ---
 
-## 📝 이 섹션에 작성할 내용
-- **LLM & Agent Systems**: 모델 아키텍처, 툴 콜링(Tool Calling), 멀티 에이전트 협업 구조
-- **프롬프트 엔지니어링**: 구조화된 출력(Structured Outputs), ReAct 패턴, Few-shot 설계
-- **RAG & 임베딩**: 벡터 DB, 하이브리드 검색, 문서 청킹 전략
-- **오픈소스 AI 모델**: 로컬 실행(Ollama, vLLM), 파인튜닝, 성능 평가
+## 🔬 핵심 연구 및 학습 영역
 
----
+```mermaid
+graph TD
+    AI[AI & Machine Learning] --> Agents[🤖 Agent Systems<br/>도구 연동, 멀티 에이전트 협업]
+    AI --> Prompt[📐 Prompt Engineering<br/>구조화된 출력, ReAct 패턴]
+    AI --> RAG[📚 RAG & Retrieval<br/>임베딩, 벡터 검색, 컨텍스트 최적화]
+    AI --> Local[⚡ Local & Open-Source<br/>Ollama, 경량 모델 서빙]
 
-## 💡 새 글 작성 팁
-새로운 노트를 작성할 때는 이 폴더(`content/ai/`)에 `.md` 파일을 생성하고 상단에 프론트매터(Frontmatter)를 추가하면 사이트에 자동으로 반영됩니다:
-
-```markdown
----
-title: 글 제목
-tags:
-  - ai
-  - llm
----
-
-여기에 내용을 작성하세요...
+    classDef area fill:#284b63,stroke:#fff,stroke-width:1px,color:#fff;
+    class AI,Agents,Prompt,RAG,Local area;
 ```
+
+---
+
+## 📑 주요 탐구 주제
+
+1. **에이전트 아키텍처 (Agent Architectures)**:
+   - Tool Calling, MCP(Model Context Protocol) 규격 및 런타임 제어
+   - ReAct(Reasoning + Acting) 루프와 자율적 에러 복구
+2. **프롬프트 엔지니어링 & 제어 (Prompt Engineering)**:
+   - Few-shot 설계, JSON Schema 기반 Structured Outputs
+   - 복합 시스템 프롬프트(System Prompt) 설계 패턴
+3. **검색 증강 생성 (RAG) & 메모리**:
+   - 하이브리드 검색(키워드 + 시맨틱 벡터), 문서 청킹 전략
+   - 에이전트 세션 간 영속 메모리(Persistent Memory) 관리

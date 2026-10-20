@@ -21,7 +21,7 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     // Verify title and callout
     await expect(page.locator("h1.article-title")).toContainText("AI & Machine Learning");
     await expect(page.locator(".callout")).toBeVisible();
-    await expect(page.locator(".callout")).toContainText("직접 공부하고 실험하며 검증한 기술 지식");
+    await expect(page.locator(".callout")).toContainText("실무와 연구를 통해 직접 검증한 핵심 AI 기술 지식");
   });
 
   test("3. Navigates to Tools hub and verifies tool matrix", async ({ page }) => {
