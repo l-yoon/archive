@@ -18,10 +18,10 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     const response = await page.goto("ai/");
     expect(response?.status()).toBe(200);
 
-    // Verify title and callout
+    // Verify title and content
     await expect(page.locator("h1.article-title")).toContainText("AI & Agents");
-    await expect(page.locator(".callout")).toBeVisible();
-    await expect(page.locator(".callout")).toContainText("실무와 연구를 통해 직접 검증한 핵심 AI 기술 지식");
+    const content = page.locator("article");
+    await expect(content).toContainText("에이전트 아키텍처");
   });
 
   test("3. Navigates to Tools hub and verifies tool matrix", async ({ page }) => {
