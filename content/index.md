@@ -20,7 +20,7 @@ title: Chanmin's Tech Notes & Knowledge Base
 ## 📌 주요 아티클 (Featured Notes)
 
 * 🛠️ **[[tools/claude-code-and-plugins|Claude Code와 Plugin 생태계 완벽 가이드]]**: 에이전틱 코딩 CLI의 작동 원리와 Skills, MCP, Subagents, Hooks를 하나로 묶는 플러그인 아키텍처 심층 분석
-* 🛠️ **[[tools/google-ai-edge-foresight|Google AI Edge Foresight: 온디바이스 로컬 AI 미팅 & 지식 베이스]]**: Apple Silicon Mac 위에서 Gemma 4와 EmbeddingGemma 2로 구동되는 오프라인 미팅 어시스턴트
+* 🛠️ **[[tools/google-ai-edge-foresight|Google AI Edge Foresight: 온디바이스 로컬 AI 미팅 & 지식 베이스]]**: Apple Silicon Mac 위에서 Gemma 4와 EmbeddingGemma 2로 구동되는 오프라인 미팅 어시스턴트 (한국어 미지원 이슈 및 실무 대안 분석)
 * 🛠️ **[[tools/rea|REA: 리버스 엔지니어링 에이전트 도구 완벽 분석]]**: Ghidra와 IDA Pro를 Claude Code / Cursor에 연결하는 역공학 에이전트 MCP 프레임워크
 * 🛠️ **[[tools/openbot|OpenBot: 로컬 퍼스트 오픈소스 멀티 에이전트 동료 플랫폼]]**: 내 컴퓨터에서 실행되는 오픈소스 자율형 멀티 에이전트 워크스페이스
 * 🛠️ **[[tools/anarlog|Anarlog: 봇 없는 로컬 퍼스트 AI 회의록 & 지식 관리 도구]]**: 회의에 봇을 초대하지 않고 시스템 오디오로 직접 캡처하는 로컬 마크다운 회의록 도구 (구 Hyprnote)
