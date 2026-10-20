@@ -20,6 +20,7 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "install-plugins": "npx tsx ./quartz/plugins/loader/install-plugins.ts",
     "prebuild": "npm run install-plugins",
+    "test:e2e": "playwright test",
     "job:scrape": "python3 ./scripts/scrape_job.py",
     "job:radar": "python3 ./scripts/job_radar.py --save"
   },
@@ -121,6 +122,7 @@
     "yargs": "^18.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@quartz-community/types": "^1.0.0",
     "@quartz-community/utils": "^1.0.1",
     "@types/hast": "^3.0.4",

@@ -16,6 +16,10 @@ prof/
 .env
 .env.*.local
 
+# Testing
+test-results/
+playwright-report/
+
 # Private
 private/
 data/jobs/

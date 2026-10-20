@@ -1,0 +1,117 @@
+import { test, expect } from "@playwright/test";
+
+test.describe("Quartz Tech Notes Blog E2E Tests", () => {
+  test("1. Homepage loads properly with title, header and core UI", async ({ page }) => {
+    const response = await page.goto("");
+    expect(response?.status()).toBe(200);
+
+    // Verify Title & Brand
+    await expect(page).toHaveTitle(/Chanmin's Tech Notes/i);
+    const mainHeading = page.locator("h1.article-title");
+    await expect(mainHeading).toContainText("Chanmin's Tech Notes");
+
+    // Verify Core UI controls are present
+    await expect(page.locator(".darkmode")).toBeVisible();
+  });
+
+  test("2. Navigates to AI & Agent Engineering note and verifies content", async ({ page }) => {
+    const response = await page.goto("ai/agent-pipeline-and-cost-optimization");
+    expect(response?.status()).toBe(200);
+
+    // Verify title and callout
+    await expect(page.locator("h1.article-title")).toContainText("AI 에이전트 파이프라인");
+    await expect(page.locator(".callout")).toBeVisible();
+    await expect(page.locator(".callout")).toContainText("조용한 것은 싸다는 증거가 아니다");
+  });
+
+  test("3. Navigates to AI Tools hub and verifies tool matrix", async ({ page }) => {
+    const response = await page.goto("ai-tools/");
+    expect(response?.status()).toBe(200);
+
+    await expect(page.locator("h1.article-title")).toContainText("AI Tools");
+    const content = page.locator("article");
+    await expect(content).toContainText("Claude Code");
+    await expect(content).toContainText("Cursor");
+    await expect(content).toContainText("OpenRouter");
+    await expect(content).toContainText("Langfuse");
+  });
+
+  test("4. Navigates to Portfolio/Resume and verifies credentials", async ({ page }) => {
+    const response = await page.goto("portfolio/resume");
+    expect(response?.status()).toBe(200);
+
+    await expect(page.locator("h1.article-title")).toContainText("윤찬민");
+    const article = page.locator("article");
+    await expect(article).toContainText("AI Fluency: Framework and foundations");
+    await expect(article).toContainText("Claude Academy");
+  });
+
+  test("5. Dark mode toggle switches themes", async ({ page }) => {
+    await page.goto("");
+
+    const darkmodeBtn = page.locator(".darkmode").first();
+    await expect(darkmodeBtn).toBeVisible();
+
+    const initialTheme = await page.evaluate(() =>
+      document.documentElement.getAttribute("saved-theme")
+    );
+
+    await darkmodeBtn.click();
+    await page.waitForTimeout(300);
+
+    const toggledTheme = await page.evaluate(() =>
+      document.documentElement.getAttribute("saved-theme")
+    );
+
+    expect(toggledTheme).not.toBe(initialTheme);
+  });
+
+  test("6. Search modal opens when clicking search trigger", async ({ page }) => {
+    await page.goto("");
+
+    const searchBtn = page.locator(".search-button").first();
+    await expect(searchBtn).toBeVisible();
+    await searchBtn.click();
+
+    // Verify search container is active and search input is visible
+    const searchContainer = page.locator(".search-container.active, .search-container");
+    const searchInput = page.locator("input.search-bar");
+    await expect(searchContainer).toBeVisible({ timeout: 5000 });
+    await expect(searchInput).toBeVisible({ timeout: 5000 });
+
+    // Type a query and verify results display
+    await searchInput.fill("AI");
+    await page.waitForTimeout(500);
+    const searchLayout = page.locator(".search-layout");
+    await expect(searchLayout).toBeVisible({ timeout: 5000 });
+  });
+
+  test("7. Crawls and verifies all internal links return HTTP 200", async ({ page, request }) => {
+    await page.goto("");
+
+    // Extract all internal links on the page
+    const links = await page.$$eval("a[href]", (elements) =>
+      elements
+        .map((el) => el.getAttribute("href"))
+        .filter(
+          (href): href is string =>
+            !!href &&
+            !href.startsWith("http://") &&
+            !href.startsWith("https://") &&
+            !href.startsWith("mailto:") &&
+            !href.startsWith("tel:") &&
+            !href.startsWith("javascript:") &&
+            !href.startsWith("#")
+        )
+    );
+
+    const uniqueLinks = Array.from(new Set(links));
+    expect(uniqueLinks.length).toBeGreaterThan(0);
+
+    for (const link of uniqueLinks) {
+      const fullUrl = new URL(link, page.url()).href;
+      const res = await request.get(fullUrl);
+      expect(res.status(), `Broken link found: ${fullUrl}`).toBe(200);
+    }
+  });
+});
