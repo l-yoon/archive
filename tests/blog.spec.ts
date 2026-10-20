@@ -114,4 +114,12 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
       expect(res.status(), `Broken link found: ${fullUrl}`).toBe(200);
     }
   });
+
+  test("8. Page view counter badge is rendered in content-meta", async ({ page }) => {
+    await page.goto("ai/mcp-server-protocol");
+    const viewCounter = page.locator(".content-meta .view-counter img.view-counter-img");
+    await expect(viewCounter).toBeVisible({ timeout: 10000 });
+    await expect(viewCounter).toHaveAttribute("alt", "조회수");
+    await expect(viewCounter).toHaveAttribute("src", /hits\.sh\/l-yoon\.github\.io\/notes\/ai\/mcp-server-protocol/);
+  });
 });

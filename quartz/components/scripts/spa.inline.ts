@@ -194,6 +194,31 @@ function createRouter() {
   })()
 }
 
+function updateViewCounter() {
+  const contentMeta = document.querySelector(".content-meta")
+  if (!contentMeta) return
+  if (contentMeta.querySelector(".view-counter")) return
+
+  const slug = getFullSlug(window)
+  if (!slug || slug === "404") return
+
+  const targetKey = `l-yoon.github.io/notes/${slug}`
+
+  const viewSpan = document.createElement("span")
+  viewSpan.className = "view-counter"
+
+  const badgeImg = document.createElement("img")
+  badgeImg.src = `https://hits.sh/${targetKey}.svg?style=flat-square&label=%EC%A1%B0%ED%9A%8C%EC%88%98&color=7b97aa&labelColor=284b63`
+  badgeImg.alt = "조회수"
+  badgeImg.className = "view-counter-img"
+  badgeImg.loading = "lazy"
+
+  viewSpan.appendChild(badgeImg)
+  contentMeta.appendChild(viewSpan)
+}
+
+document.addEventListener("nav", updateViewCounter)
+
 createRouter()
 notifyNav(getFullSlug(window))
 

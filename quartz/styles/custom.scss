@@ -113,3 +113,37 @@ html[saved-theme="light"] {
 .note-properties {
   display: none !important; // Hide clunky raw metadata dropdown box
 }
+
+// Page View Counter styling
+.content-meta {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 0.25rem 0.5rem !important;
+
+  // Don't show comma immediately before the badge
+  &[show-comma="true"] > *:has(+ .view-counter)::after {
+    content: "" !important;
+    margin-right: 0 !important;
+  }
+
+  .view-counter {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+
+    .view-counter-img {
+      height: 18px;
+      border-radius: 4px;
+      vertical-align: middle;
+      display: inline-block;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+}
