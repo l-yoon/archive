@@ -24,11 +24,11 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     await expect(page.locator(".callout")).toContainText("직접 공부하고 실험하며 검증한 기술 지식");
   });
 
-  test("3. Navigates to AI Tools hub and verifies tool matrix", async ({ page }) => {
-    const response = await page.goto("ai-tools/");
+  test("3. Navigates to Tools hub and verifies tool matrix", async ({ page }) => {
+    const response = await page.goto("tools/");
     expect(response?.status()).toBe(200);
 
-    await expect(page.locator("h1.article-title")).toContainText("AI Tools");
+    await expect(page.locator("h1.article-title")).toContainText("AI & Dev Tools");
     const content = page.locator("article");
     await expect(content).toContainText("Claude Code");
     await expect(content).toContainText("Cursor");
@@ -36,13 +36,13 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     await expect(content).toContainText("Langfuse");
   });
 
-  test("4. Navigates to Portfolio and verifies structure", async ({ page }) => {
-    const response = await page.goto("portfolio/");
+  test("4. Navigates to References and verifies structure", async ({ page }) => {
+    const response = await page.goto("references/");
     expect(response?.status()).toBe(200);
 
-    await expect(page.locator("h1.article-title")).toContainText("Portfolio & Projects");
+    await expect(page.locator("h1.article-title")).toContainText("Website & Architecture References");
     const article = page.locator("article");
-    await expect(article).toContainText("프로젝트 & 쇼케이스");
+    await expect(article).toContainText("SaaS UI/UX 패턴");
   });
 
   test("5. Dark mode toggle switches themes", async ({ page }) => {

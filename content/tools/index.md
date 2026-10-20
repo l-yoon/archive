@@ -1,13 +1,14 @@
 ---
-title: 실무 AI Tools 큐레이션 & 워크플로우
+title: AI & Dev Tools 큐레이션 & 워크플로우
 tags:
+  - tools
   - ai-tools
   - productivity
-  - workflow
+  - dev-tools
 ---
 
 > [!NOTE] 큐레이션 원칙
-> 단순한 유행성 서비스 나열이 아닌, **실제 업무와 개발에 유용한 생산성 향상을 검증한 AI 도구**들을 선별하여 기록하고 비교 분석하는 공간입니다.
+> 단순한 유행성 서비스 나열이 아닌, **실제 업무와 개발에 유용한 생산성 향상을 검증한 AI 도구 및 개발 도구**들을 선별하여 기록하고 비교 분석하는 공간입니다.
 
 ---
 
@@ -15,7 +16,7 @@ tags:
 
 ```mermaid
 graph TD
-    Tools[AI Tools Hub] --> Coding[💻 코딩 & 에이전트]
+    Tools[Tools Hub] --> Coding[💻 코딩 & 에이전트]
     Tools --> Infra[⚡ LLM 서빙 & 인프라]
     Tools --> Research[🔬 리서치 & 지식 관리]
     Tools --> Prototyping[🎨 UI/UX 프로토타이핑]
@@ -43,9 +44,9 @@ graph TD
 ---
 
 ## 📌 주요 아티클 & 실무 가이드
-* 📖 **[[ai-tools/claude-code-and-plugins|Claude Code와 Plugin 생태계 완벽 가이드]]**: 에이전틱 코딩 CLI의 원리와 Skills, MCP, Subagents, Hooks를 묶는 플러그인 아키텍처
+* 📖 **[[tools/claude-code-and-plugins|Claude Code와 Plugin 생태계 완벽 가이드]]**: 에이전틱 코딩 CLI의 원리와 Skills, MCP, Subagents, Hooks를 묶는 플러그인 아키텍처
 
 ---
 
 ## 📝 새 도구 리뷰 작성법
-이 폴더(`content/ai-tools/`)에 도구 사용기 또는 비교 분석 마크다운 파일을 생성하면 탐색기 목록에 자동 추가됩니다.
+이 폴더(`content/tools/`)에 도구 사용기 또는 비교 분석 마크다운 파일을 생성하면 탐색기 목록에 자동 추가됩니다.
