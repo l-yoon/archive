@@ -7,22 +7,7 @@ tags:
 ---
 
 > [!NOTE] 섹션 개요
-> 대규모 언어 모델(LLM), 에이전트 시스템, 프롬프트 엔지니어링, RAG 등 **실무와 연구를 통해 직접 검증한 핵심 AI 기술 지식과 구현 패턴**을 다룹니다.
-
----
-
-## 🔬 핵심 연구 및 학습 영역
-
-```mermaid
-graph TD
-    AI[AI & Machine Learning] --> Agents[🤖 Agent Systems<br/>도구 연동, 멀티 에이전트 협업]
-    AI --> Prompt[📐 Prompt Engineering<br/>구조화된 출력, ReAct 패턴]
-    AI --> RAG[📚 RAG & Retrieval<br/>임베딩, 벡터 검색, 컨텍스트 최적화]
-    AI --> Local[⚡ Local & Open-Source<br/>Ollama, 경량 모델 서빙]
-
-    classDef area fill:#284b63,stroke:#fff,stroke-width:1px,color:#fff;
-    class AI,Agents,Prompt,RAG,Local area;
-```
+> 대규모 언어 모델(LLM), 에이전트 시스템, 프롬프트 엔지니어링, RAG 등 **실무와 연구를 통해 직접 검증한 핵심 AI 기술 지식과 구현 패턴**을 아카이빙하는 공간입니다.
 
 ---
 

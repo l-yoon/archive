@@ -13,17 +13,10 @@ tags:
 ---
 
 ## 📌 주요 아카이브 영역
-
-```mermaid
-graph TD
-    Ref[Web & References] --> SaaS[💼 B2B SaaS UX<br/>온보딩, 대시보드 데이터 시각화]
-    Ref --> UI[🎨 Web Interaction<br/>마이크로 인터랙션, 타이포그래피]
-    Ref --> Arch[⚡ Tech Architecture<br/>확장 가능한 프론트/백엔드 구조]
-    Ref --> Curated[🔖 Tech Bookmarks<br/>엔지니어링 생산성 사이트]
-
-    classDef ref fill:#284b63,stroke:#fff,stroke-width:1px,color:#fff;
-    class Ref,SaaS,UI,Arch,Curated ref;
-```
+- **B2B SaaS UX**: 온보딩, 복합 대시보드 데이터 시각화, 설정 플로우
+- **Web Interaction**: 마이크로 인터랙션, 타이포그래피, 모션 디자인 레퍼런스
+- **Tech Architecture**: 실무 트래픽 처리, 상태 관리, 확장 가능한 프론트/백엔드 구조
+- **Curated Tech Bookmarks**: 개발 생산성을 높여주는 도구 및 엔지니어링 사이트
 
 ---
 

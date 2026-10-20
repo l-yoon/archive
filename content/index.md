@@ -11,19 +11,9 @@ title: Chanmin's Tech Notes & Knowledge Base
 
 ## ⚡ 3대 핵심 카테고리 (Core Pillars)
 
-```mermaid
-graph LR
-    Index[Tech Notes Hub] --> AI[🤖 AI & Agents]
-    Index --> Tools[🛠️ Tools & Ecosystem]
-    Index --> Ref[🌐 Web & References]
-
-    classDef core fill:#284b63,stroke:#fff,stroke-width:1px,color:#fff;
-    class Index,AI,Tools,Ref core;
-```
-
-* **🤖 [[ai/index|AI & Machine Learning]]**: AI 이론, LLM 파이프라인, 프롬프트 엔지니어링, 에이전트 시스템 아키텍처 학습 노트
-* **🛠️ [[tools/index|Tools & Ecosystem]]**: Claude Code, Cursor, OpenRouter, MCP 등 실무 생산성을 혁신하는 도구 심층 분석 및 큐레이션
-* **🌐 [[references/index|Web & Product References]]**: 글로벌 SaaS UI/UX 패턴, 정보 구조 설계, 웹 기술 아키텍처 벤치마킹 자료
+* **🤖 [[ai/index|AI & Agents]]**: AI 이론, LLM 파이프라인, 프롬프트 엔지니어링, 에이전트 시스템 아키텍처 학습 노트
+* **🛠️ [[tools/index|Tools]]**: Claude Code, Cursor, OpenRouter, MCP 등 실무 생산성을 혁신하는 도구 심층 분석 및 큐레이션
+* **🌐 [[references/index|References]]**: 글로벌 SaaS UI/UX 패턴, 정보 구조 설계, 웹 기술 아키텍처 벤치마킹 자료
 
 ---
 

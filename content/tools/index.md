@@ -12,26 +12,6 @@ tags:
 
 ---
 
-## 🛠️ 주요 관심 도구 영역
-
-```mermaid
-graph TD
-    Tools[Tools Hub] --> Coding[💻 코딩 & 에이전트]
-    Tools --> Infra[⚡ LLM 서빙 & 인프라]
-    Tools --> Research[🔬 리서치 & 지식 관리]
-    Tools --> Prototyping[🎨 UI/UX 프로토타이핑]
-
-    Coding --> C1[Claude Code / Cursor]
-    Infra --> I1[OpenRouter / Langfuse]
-    Research --> R1[Perplexity / NotebookLM]
-    Prototyping --> P1[v0 / Bolt.new]
-
-    classDef tool fill:#284b63,stroke:#fff,stroke-width:1px,color:#fff;
-    class Tools,Coding,Infra,Research,Prototyping tool;
-```
-
----
-
 ## ⚡ 실무 검증 도구 퀵 매트릭스
 
 | 도구명 | 카테고리 | 핵심 강점 | 추천 활용 시점 |
