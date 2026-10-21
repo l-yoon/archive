@@ -19,6 +19,7 @@ title: Chanmin's Tech Archive
 
 ## 📌 주요 노트 (Featured)
 
+* 🏛️ **[[references/test-pyramid-strategy|테스트 피라미드는 왜 여전히 유효한가]]**: 실제 초기 SaaS QA 14건으로 뜯어본 계층별 방어선 구축 전략
 * 🛠️ **[[tools/claude-code-and-plugins|Claude Code와 Plugin]]**: 자동완성 대신 혼자 일하는 CLI 코딩 에이전트 & 플러그인 확장
 * 🛠️ **[[tools/google-ai-edge-foresight|Google AI Edge Foresight]]**: 맥북 NPU 로컬 회의록. 완벽한 개념이지만 한국어가 안 되는 이유
 * 🛠️ **[[tools/anarlog|Anarlog]]**: 봇 계정 초대 없이 컴퓨터 소리만 따는 로컬 마크다운 회의록

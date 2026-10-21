@@ -130,6 +130,7 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
       { path: "tools/anarlog", title: /Anarlog/ },
       { path: "tools/aside", title: /Aside/ },
       { path: "tools/claude-code-and-plugins", title: /Claude Code/ },
+      { path: "references/test-pyramid-strategy", title: /테스트 피라미드는 왜 여전히 유효한가/ },
     ];
 
     for (const item of pages) {
