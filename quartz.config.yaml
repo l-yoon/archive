@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "Chanmin's Tech Notes"
+  pageTitle: "Chanmin's Tech Archive"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: ko-KR
-  baseUrl: l-yoon.github.io/notes
+  baseUrl: l-yoon.github.io/archive
   ignorePatterns:
     - private
     - templates

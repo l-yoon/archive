@@ -1,5 +1,5 @@
 ---
-title: Chanmin's Tech Notes
+title: Chanmin's Tech Archive
 ---
 
 실무에서 직접 써보고 검증한 **AI 에이전트, 개발 도구, 웹 아키텍처** 아카이브.  

@@ -9,7 +9,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [["list"], ["html", { open: "never" }]],
   use: {
-    baseURL: process.env.BASE_URL || "https://l-yoon.github.io/notes/",
+    baseURL: process.env.BASE_URL || "https://l-yoon.github.io/archive/",
     trace: "on-first-retry",
     screenshot: "only-on-failure",
   },

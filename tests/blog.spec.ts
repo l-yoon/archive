@@ -6,9 +6,9 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     expect(response?.status()).toBe(200);
 
     // Verify Title & Brand
-    await expect(page).toHaveTitle(/Chanmin's Tech Notes/i);
+    await expect(page).toHaveTitle(/Chanmin's Tech Archive/i);
     const mainHeading = page.locator("h1.article-title");
-    await expect(mainHeading).toContainText("Chanmin's Tech Notes");
+    await expect(mainHeading).toContainText("Chanmin's Tech Archive");
 
     // Verify Core UI controls are present
     await expect(page.locator(".darkmode")).toBeVisible();
@@ -119,7 +119,7 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
     const viewCounter = page.locator(".content-meta .view-counter img.view-counter-img");
     await expect(viewCounter).toBeVisible({ timeout: 10000 });
     await expect(viewCounter).toHaveAttribute("alt", "조회수");
-    await expect(viewCounter).toHaveAttribute("src", /hits\.sh\/l-yoon\.github\.io\/notes\/ai/);
+    await expect(viewCounter).toHaveAttribute("src", /hits\.sh\/l-yoon\.github\.io\/archive\/ai/);
   });
 
   test("9. Newly added tool pages load properly with valid headings and content", async ({ page }) => {

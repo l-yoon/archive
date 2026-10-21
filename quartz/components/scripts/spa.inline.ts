@@ -202,7 +202,7 @@ function updateViewCounter() {
   const slug = getFullSlug(window)
   if (!slug || slug === "404") return
 
-  const targetKey = `l-yoon.github.io/notes/${slug}`
+  const targetKey = `l-yoon.github.io/archive/${slug}`
 
   const viewSpan = document.createElement("span")
   viewSpan.className = "view-counter"
