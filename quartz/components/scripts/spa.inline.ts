@@ -217,7 +217,47 @@ function updateViewCounter() {
   contentMeta.appendChild(viewSpan)
 }
 
-document.addEventListener("nav", updateViewCounter)
+function updateExplorerFolderCounts() {
+  const folders = document.querySelectorAll<HTMLElement>(".explorer .folder-container")
+  if (!folders || folders.length === 0) return
+
+  folders.forEach((container) => {
+    const parentLi = container.parentElement
+    if (!parentLi) return
+
+    const fileCount = parentLi.querySelectorAll(".folder-outer .nav-file-title").length
+    const folderTitle = container.querySelector<HTMLElement>(".folder-title")
+    if (folderTitle) {
+      let countSpan = container.querySelector<HTMLElement>(".folder-count")
+      if (!countSpan) {
+        countSpan = document.createElement("span")
+        countSpan.className = "folder-count"
+        folderTitle.appendChild(countSpan)
+      }
+      countSpan.textContent = ` (${fileCount})`
+    }
+  })
+}
+
+const explorerObserver = new MutationObserver(() => updateExplorerFolderCounts())
+function initExplorerCounter() {
+  const explorer = document.querySelector(".explorer")
+  if (explorer) {
+    explorerObserver.observe(explorer, { childList: true, subtree: true })
+  }
+  updateExplorerFolderCounts()
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initExplorerCounter()
+})
+
+document.addEventListener("nav", () => {
+  updateViewCounter()
+  initExplorerCounter()
+  setTimeout(updateExplorerFolderCounts, 50)
+  setTimeout(updateExplorerFolderCounts, 250)
+})
 
 createRouter()
 notifyNav(getFullSlug(window))

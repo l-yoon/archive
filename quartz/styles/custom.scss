@@ -155,4 +155,13 @@ html[saved-theme="light"] {
     word-break: keep-all; // Prevent breaking Korean words mid-syllable
     line-height: 1.35;
   }
+
+  .folder-count {
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-left: 0.3rem;
+    font-weight: 500;
+    vertical-align: baseline;
+    opacity: 0.85;
+  }
 }

@@ -11,9 +11,9 @@ title: Chanmin's Tech Archive
 
 ## ⚡ 3대 카테고리
 
-* **🤖 [[ai/index|AI & Agents]]**: 모델 원리, 프롬프트 엔지니어링, 멀티 에이전트 아키텍처
-* **🛠️ [[tools/index|Tools]]**: Claude Code, Cursor, OpenRouter, MCP 등 실무 도구 큐레이션
-* **🌐 [[references/index|References]]**: 글로벌 SaaS UI/UX 패턴, 웹 아키텍처 벤치마킹
+* **🤖 [[ai/index|AI & Agents]] (0)**: 모델 원리, 프롬프트 엔지니어링, 멀티 에이전트 아키텍처
+* **🛠️ [[tools/index|Tools]] (7)**: Claude Code, Cursor, OpenRouter, MCP 등 실무 도구 큐레이션
+* **🌐 [[references/index|References]] (1)**: 글로벌 SaaS UI/UX 패턴, 웹 아키텍처 벤치마킹
 
 ---
 

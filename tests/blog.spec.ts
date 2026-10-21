@@ -142,4 +142,16 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
       await expect(page.locator(".mermaid[data-processed='false']")).toHaveCount(0);
     }
   });
+
+  test("10. Folder counts are rendered next to category titles in Explorer", async ({ page }) => {
+    await page.goto("");
+    const folderContainers = page.locator(".explorer .folder-container");
+    await expect(folderContainers.first()).toBeVisible({ timeout: 10000 });
+
+    const folderCounts = page.locator(".explorer .folder-container .folder-count");
+    await expect(folderCounts.first()).toBeVisible({ timeout: 10000 });
+
+    const countTexts = await folderContainers.allInnerTexts();
+    expect(countTexts.some((t) => /\(\d+\)/.test(t))).toBe(true);
+  });
 });
