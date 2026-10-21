@@ -222,41 +222,31 @@ function updateExplorerFolderCounts() {
   if (!folders || folders.length === 0) return
 
   folders.forEach((container) => {
+    if (container.querySelector(".folder-count")) return
+
     const parentLi = container.parentElement
     if (!parentLi) return
 
     const fileCount = parentLi.querySelectorAll(".folder-outer .nav-file-title").length
     const folderTitle = container.querySelector<HTMLElement>(".folder-title")
     if (folderTitle) {
-      let countSpan = container.querySelector<HTMLElement>(".folder-count")
-      if (!countSpan) {
-        countSpan = document.createElement("span")
-        countSpan.className = "folder-count"
-        folderTitle.appendChild(countSpan)
-      }
+      const countSpan = document.createElement("span")
+      countSpan.className = "folder-count"
       countSpan.textContent = ` (${fileCount})`
+      folderTitle.appendChild(countSpan)
     }
   })
 }
 
-const explorerObserver = new MutationObserver(() => updateExplorerFolderCounts())
-function initExplorerCounter() {
-  const explorer = document.querySelector(".explorer")
-  if (explorer) {
-    explorerObserver.observe(explorer, { childList: true, subtree: true })
-  }
-  updateExplorerFolderCounts()
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  initExplorerCounter()
+  updateExplorerFolderCounts()
 })
 
 document.addEventListener("nav", () => {
   updateViewCounter()
-  initExplorerCounter()
   setTimeout(updateExplorerFolderCounts, 50)
-  setTimeout(updateExplorerFolderCounts, 250)
+  setTimeout(updateExplorerFolderCounts, 200)
+  setTimeout(updateExplorerFolderCounts, 600)
 })
 
 createRouter()

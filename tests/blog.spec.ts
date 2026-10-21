@@ -145,6 +145,13 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
 
   test("10. Folder counts are rendered next to category titles in Explorer", async ({ page }) => {
     await page.goto("");
+
+    // If on mobile, open the explorer drawer
+    const mobileToggle = page.locator(".explorer-toggle.mobile-explorer");
+    if (await mobileToggle.isVisible()) {
+      await mobileToggle.click();
+    }
+
     const folderContainers = page.locator(".explorer .folder-container");
     await expect(folderContainers.first()).toBeVisible({ timeout: 10000 });
 
