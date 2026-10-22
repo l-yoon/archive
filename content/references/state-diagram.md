@@ -32,21 +32,19 @@ tags:
 
 글로벌 결제/주문 시스템이 굴러가는 핵심 로직:
 
-```
-[장바구니]
-   │
-   ▼ (주문서 작성)
-[결제 대기] ──(카드 승인 실패)──► [결제 실패] ──(재시도)──┐
-   │                                                     │
-   │ (카드 승인 성공)                                      │
-   ▼                                                     ▼
-[주문 완료] ──(고객 즉시 취소)──► [취소/환불] ◄──────────┘
-   │
-   ▼ (배송 준비 및 송장 등록 — 이 시점부터 취소 불가)
-[배송 중]
-   │
-   ▼ (수령 확인)
-[배송 완료] ──(단순 변심/하자)──► [반품 신청] ➔ [반품 검수] ➔ [환불]
+```mermaid
+flowchart TD
+    Cart["장바구니"] -->|주문서 작성| Pending["결제 대기"]
+    Pending -->|카드 승인 실패| Failed["결제 실패"]
+    Failed -->|재시도| Pending
+    Failed -->|결제 포기| Cancelled["취소/환불"]
+    Pending -->|카드 승인 성공| Paid["주문 완료"]
+    Paid -->|고객 즉시 취소| Cancelled
+    Paid -->|배송 준비 / 취소 불가| Shipping["배송 중"]
+    Shipping -->|수령 확인| Delivered["배송 완료"]
+    Delivered -->|단순 변심 · 하자| Return["반품 신청"]
+    Return -->|수거 완료| Inspect["반품 검수"]
+    Inspect -->|환불 승인| Cancelled
 ```
 
 ### 이 다이어그램 하나가 해결하는 것
@@ -67,10 +65,13 @@ tags:
 | **3. 성공 (Success)** | 정상 데이터 목록 렌더링 | 데이터 패치 완료 (200 OK) |
 | **4. 에러 (Error)** | "네트워크가 불안정해요" 안내 문구 + [다시 시도] 버튼 | 네트워크 끊김, 서버 500 |
 
-```
-[Empty] ──(데이터 생성)──► [Loading] ──(성공)──► [Success]
-                              │
-                              └──(실패)──► [Error] ──(재시도)──► [Loading]
+```mermaid
+flowchart LR
+    Empty["비어있음 (Empty)"] -->|데이터 요청| Loading["로딩 중 (Loading)"]
+    Loading -->|200 OK 응답| Success["성공 (Success)"]
+    Loading -->|네트워크 / 서버 오류| Error["에러 (Error)"]
+    Error -->|다시 시도| Loading
+    Success -->|새로고침 / 재호출| Loading
 ```
 
 ---
