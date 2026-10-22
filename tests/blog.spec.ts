@@ -131,6 +131,7 @@ test.describe("Quartz Tech Notes Blog E2E Tests", () => {
       { path: "tools/aside", title: /Aside/ },
       { path: "tools/claude-code-and-plugins", title: /Claude Code/ },
       { path: "references/test-pyramid-strategy", title: /테스트 피라미드는 왜 여전히 유효한가/ },
+      { path: "references/state-diagram", title: /상태 다이어그램/ },
     ];
 
     for (const item of pages) {
