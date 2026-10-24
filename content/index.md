@@ -13,13 +13,14 @@ title: Chanmin's Tech Archive
 ## ⚡ 3대 카테고리
 
 * **🤖 [[ai/index|AI & Agents]] (0)**: 모델 원리, 프롬프트 엔지니어링, 멀티 에이전트 아키텍처
-* **🛠️ [[tools/index|Tools]] (7)**: Claude Code, Cursor, OpenRouter, MCP 등 실무 도구 큐레이션
+* **🛠️ [[tools/index|Tools]] (8)**: Claude Code, Cursor, OpenRouter, MCP 등 실무 도구 큐레이션
 * **🌐 [[references/index|References]] (2)**: 글로벌 SaaS UI/UX 패턴, 웹 아키텍처 벤치마킹
 
 ---
 
 ## 📌 주요 노트 (Featured)
 
+* 🛠️ **[[tools/claude-duet|Claude Duet]]**: 묻기 전에 먼저 일하는 능동형(Proactive) AI 에이전트 & UX 시사점
 * 📐 **[[references/state-diagram|상태 다이어그램]]**: 기획과 화면의 구멍을 없애는 실전 상태 설계도
 * 🏛️ **[[references/test-pyramid-strategy|테스트 피라미드는 왜 여전히 유효한가]]**: 실제 초기 SaaS QA 14건으로 뜯어본 계층별 방어선 구축 전략
 * 🛠️ **[[tools/claude-code-and-plugins|Claude Code와 Plugin]]**: 자동완성 대신 혼자 일하는 CLI 코딩 에이전트 & 플러그인 확장

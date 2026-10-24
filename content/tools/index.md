@@ -17,6 +17,7 @@ tags:
 | 도구 | 성격 | 핵심 한 줄 | 비고 |
 | :--- | :--- | :--- | :--- |
 | **Claude Code** | 코딩 CLI | 터미널에서 코드베이스 혼자 고치고 테스트 통과까지 자율 실행 | 필수 설치 |
+| **Claude Duet** | 프로액티브 에이전트 | 질문 전에 모닝 브리프와 클라우드 24/7 백그라운드 업무 대행 | 신규 출시 |
 | **Cursor** | 코딩 IDE | 코드베이스 전체 인덱싱 기반 멀티파일 수정 | VS Code 대안 |
 | **Google Foresight** | 온디바이스 회의록 | 맥북 NPU로 100% 로컬 구동 (비행기 가능) | **한국어 미지원** |
 | **Anarlog** | 로컬 회의록 | 봇 없이 컴퓨터 소리만 따서 마크다운/SQLite로 로컬 저장 | 구 Hyprnote |
@@ -29,6 +30,7 @@ tags:
 ---
 
 ## 📌 주요 도구 분석 노트
+* 📖 **[[tools/claude-duet|Claude Duet]]**: 묻기 전에 먼저 일하는 능동형(Proactive) AI 에이전트 & 제품 UX 시사점
 * 📖 **[[tools/claude-code-and-plugins|Claude Code와 Plugin]]**: 단순 자동완성을 넘어 자율 실행 CLI로 쓰는 법 & 플러그인 확장
 * 📖 **[[tools/google-ai-edge-foresight|Google AI Edge Foresight]]**: 맥북 로컬 회의록. 아키텍처는 완벽하지만 한국어 지원이 안 되는 이유
 * 📖 **[[tools/anarlog|Anarlog]]**: 화상회의에 어색한 봇 안 부르고 시스템 오디오 따는 로컬 마크다운 회의록
