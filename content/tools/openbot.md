@@ -1,4 +1,5 @@
 ---
+publish: true
 title: "OpenBot: 로컬에서 24시간 일하는 오픈소스 AI 동료"
 date: 2026-10-20
 tags:

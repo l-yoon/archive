@@ -1,4 +1,5 @@
 ---
+publish: true
 title: "REA: AI 에이전트에게 Ghidra와 IDA를 쥐어주는 리버스 엔지니어링 도구"
 date: 2026-10-20
 tags:

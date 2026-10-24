@@ -1,4 +1,5 @@
 ---
+publish: true
 title: "Anarlog: 봇 없는 로컬 퍼스트 AI 회의록 (구 Hyprnote)"
 date: 2026-10-20
 tags:

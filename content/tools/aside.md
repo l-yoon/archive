@@ -1,4 +1,5 @@
 ---
+publish: true
 title: "Aside: 브라우저를 조종하는 AI와 실시간 미팅 커닝페이퍼"
 date: 2026-10-20
 tags:

@@ -1,4 +1,5 @@
 ---
+publish: true
 title: "상태 다이어그램(State Diagram): 기획과 화면의 구멍을 없애는 설계도"
 date: 2026-10-22
 tags:

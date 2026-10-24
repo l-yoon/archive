@@ -1,4 +1,5 @@
 ---
+publish: true
 title: "Google AI Edge Foresight: 맥북 로컬 AI 회의록 (한국어 미지원)"
 date: 2026-10-20
 tags:

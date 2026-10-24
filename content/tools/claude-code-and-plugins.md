@@ -1,4 +1,5 @@
 ---
+publish: true
 title: "Claude Code와 Plugin: 터미널 코딩 에이전트 완벽 정리"
 date: 2026-10-20
 tags:
